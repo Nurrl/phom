@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.2)
-project(phom VERSION 0.1 LANGUAGES CXX)
+project(vapors VERSION 0.1 LANGUAGES CXX)
 
 # Version
 
@@ -16,7 +16,7 @@ set(SOURCE_FILES
         src/sockets/session.cc)
 
 # Define main target
-add_executable(phom ${SOURCE_FILES})
+add_executable(vapors ${SOURCE_FILES})
 
 # Append libraries to linker
-target_link_libraries(phom pthread)
+target_link_libraries(vapors pthread)
