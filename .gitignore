@@ -1,0 +1,5 @@
+# Exclude CLion project files
+.idea
+
+# Exclude build/ dir
+build
