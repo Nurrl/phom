@@ -1,13 +1,23 @@
+# Enable C++ support
 language: cpp
 
-os: linux
-
+# Compiler selection
 compiler:
+  - clang
   - gcc
 
-before_script:
+# Update toolchains
+dist: xenial
+
+addons:
+  apt:
+    packages:
+    - gcc
+    - g++
+    - clang
+
+# Build steps
+script:
   - mkdir build
   - cd build
-  - cmake ..
-
-script: make
+  - cmake .. && make

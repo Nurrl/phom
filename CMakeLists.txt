@@ -10,7 +10,13 @@ set(CMAKE_CXX_STANDARD 11)
 include_directories(include)
 
 set(SOURCE_FILES
-        src/main.cc)
+        src/main.cc
+        src/log.cc
+        src/sockets/server.cc
+        src/sockets/session.cc)
 
 # Define main target
 add_executable(phom ${SOURCE_FILES})
+
+# Append libraries to linker
+target_link_libraries(phom pthread)
