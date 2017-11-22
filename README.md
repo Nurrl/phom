@@ -1,4 +1,4 @@
-# phom [![Build Status](https://travis-ci.org/Nurrl/phom.svg?branch=master)](https://travis-ci.org/Nurrl/phom)
+# phom [![Build Status](https://travis-ci.org/Nurrl/phom.svg?branch=develop)](https://travis-ci.org/Nurrl/phom)
 Command-Line Utily to setup and manage virtual hosts for nginx and apache.
 
 This follows: http://google.github.io/styleguide/cppguide.html

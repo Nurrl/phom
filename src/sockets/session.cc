@@ -39,7 +39,7 @@ std::string Session::recvText() {
   }
 
   /* Return it */
-  return std::regex_replace(std::string(rxBuf), std::regex("^( |\r|\n|\r\n|\t)+|( |\r|\n|\r\n|\t)+$"), "");
+  return std::regex_replace(std::string(rxBuf), std::regex("^( |\r|\n|\r\n|\t)+|( |\r|\n|\r\n|\t)+$"), std::string(""));
 }
 
 void Session::sendText(std::string textMessage) {
