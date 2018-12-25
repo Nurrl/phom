@@ -1,0 +1,69 @@
+```
+/**
+ * User space tree:
+ * /
+ * |-- /usr
+ *     |-- share
+ *         |-- php (duplicate)
+ *         |-- zoneinfo (duplicate)
+ * |-- /etc
+ *     |-- localtime (duplicate)
+ *     |-- hosts (from template)
+ *     |-- nsswitch.conf (duplicate)
+ *     |-- resolv.conf (duplicate)
+ *     |-- services (duplicate)
+ *     |-- ssl
+ *         |-- certs (duplicate)
+ * |-- /var
+ *     |-- lib
+ *         |-- php
+ *             |-- session
+ * |-- /lib
+ *     |-- *
+ *         |-- libnss_dns.so.2 (duplicate)
+ * |-- /tmp
+ * |-- /dev
+ *     |-- urandom (duplicate)
+ *     |-- zero (duplicate)
+ *     |-- null (duplicate)
+ * |-- /data (User data)
+ *     |-- cred.json (Json for ftp credentials)
+ *     |-- (***.tld)
+ *         |-- (pool.cfg)
+ *         |-- (pool<phpversion>.cfg -> pool.cfg)
+ *     |-- ...
+ * |-- /space (User accessible space from ftp)
+ *     |-- (***.tld)
+ *     |-- (...)
+ *     |-- logs
+ *         |-- (***.tld)
+ *             |-- (error.log)
+ *             |-- (phperror.log)
+ *         |-- (...)
+ *     |-- readme
+ * |-- /<path to />
+ *     |-- space --> /space
+ *
+ */
+
+ /**
+  * Web Server tree:
+  * /
+  * |-- /data (User data)
+  *     |-- ***.tld
+  *         |-- pool.cfg
+  *         |-- pool<phpversion>.cfg -> pool.cfg
+  *     |-- ...
+  * |-- /space (User accessible space from ftp)
+  *     |-- ***.tld
+  *     |-- logs
+  *         |-- ***.tld
+  *             |-- error.log
+  *             |-- phperror.log
+  *
+  */
+```
+
+https://github.com/stackify/apache-config
+
+https://docs.travis-ci.com/user/deployment/releases/

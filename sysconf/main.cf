@@ -1,0 +1,9 @@
+/**
+ * Vapors, main config file
+ */
+
+/* Unix user configuration */
+@include "spaces.cf"
+
+/* Backend configuration */
+@include "backend.cf"

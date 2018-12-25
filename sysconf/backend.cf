@@ -1,0 +1,27 @@
+/*
+ * Here is the key you share between backends and panel,
+ * Warning: This MUST remain secret, unless that sensible data could leak.
+ */
+sharedkey = "<Something random you type on your Keyboard>";
+
+/* Backend config */
+backend: {
+  type = "master";
+  uuid = "<uuid-gen output>";
+
+  /* Listen parameters */
+  listenhost = "0.0.0.0";
+  listenport = 3888;
+
+  /*
+   * If this is the master, here is the master database,
+   * else here is the local database
+   */
+  database: {
+    host = "127.0.0.1";
+    port = 3306;
+    user = "<Database user>";
+    pass = "<Database pass>";
+    name = "<Database name>";
+  };
+};

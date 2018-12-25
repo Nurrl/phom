@@ -1,0 +1,69 @@
+/*
+ * User directory setup.
+ */
+
+userspace = ({
+  path = "/";
+  umask = 0000;
+  action = "createdir";
+}, {
+  path = "/usr";
+  umask = 0000;
+  action = "createdir";
+}, {
+  path = "/usr/share";
+  umask = 0000;
+  action = "createdir";
+}, {
+  path ="/etc";
+  umask = 0000;
+  action = "createdir";
+}, {
+  path = "/etc/ssl";
+  umask = 0000;
+  action = "createdir";
+}, {
+  path = "/var";
+  umask = 0000;
+  action = "createdir";
+}, {
+  path = "/var/lib";
+  umask = 0000;
+  action = "createdir";
+}, {
+  path = "/var/lib/php";
+  umask = 0000;
+  action = "createdir";
+}, {
+  path = "/var/lib/php/session";
+  umask = 0000;
+  action = "createdir";
+}, {
+  path = "/lib";
+  umask = 0000;
+  action = "createdir";
+}, {
+  path = "/tmp";
+  umask = 0000;
+  action = "createdir";
+}, {
+  path = "/dev";
+  umask = 0000;
+  action = "createdir";
+}, {
+  path = "/data";
+  umask = 0000;
+  action = "createdir";
+}, {
+  path = "/space";
+  umask = 0000;
+  action = "createdir";
+}, {
+  path = "/space/logs";
+  umask = 0000;
+  action = "createdir";
+});
+
+webspace = (
+
+);
